@@ -166,8 +166,7 @@ def show_exam_result(request, course_id, submission_id):
     context={
         'course': course,
         'choices': choices,
-        'score':int(score),
-        'total_score':int(total_score)
+        'grade':int(score / total_score * 100),
     }
 
     return render(

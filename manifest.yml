@@ -1,11 +1,11 @@
   applications:
-  - name: onlinecourse
+  - name: onlinecoursesdmr502
     routes:
-      - route: host.domain
+      - route: onlinecoursesdmr502.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
   - name: onlinecourse-nginx
     routes:
-      - route: host.domain/static
+      - route: onlinecoursesdmr502.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
